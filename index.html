@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Special Message For You ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #ff758c, #ffb199);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 25px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 10px 35px #0002;
+}
+
+h1 {
+    color: #e84370;
+    margin: 20px 0;
+}
+
+p {
+    color: #555;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.heart {
+    font-size: 65px;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    50% { transform: scale(1.2); }
+}
+
+button {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#yes {
+    background: #e84370;
+    color: white;
+}
+
+#no {
+    background: #ddd;
+    color: #333;
+}
+
+#message {
+    display: none;
+    margin-top: 25px;
+    color: #e84370;
+    font-size: 18px;
+    line-height: 1.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="heart">❤️</div>
+
+    <h1>Hey, My Special Person!</h1>
+
+    <p>
+        I have something special to tell you.
+        You make my ordinary days beautiful.
+        Your smile means more to me than words can explain.
+    </p>
+
+    <h2>Will You Be Mine Forever? 💍</h2>
+
+    <button id="yes" onclick="sayYes()">YES ❤️</button>
+
+    <button id="no" onclick="sayNo()">NO 🙈</button>
+
+    <div id="message">
+        <h2>You Made Me The Happiest Person! ❤️</h2>
+        <p>
+            I don't promise a perfect life,
+            but I promise to keep choosing you,
+            respect you, support you and make
+            beautiful memories together.
+        </p>
+        <h2>Forever & Always! 🌹</h2>
+    </div>
+
+</div>
+
+<script>
+function sayYes() {
+    document.getElementById("message").style.display = "block";
+    document.getElementById("no").style.display = "none";
+    document.getElementById("yes").innerText = "I LOVE THIS! ❤️";
+}
+
+function sayNo() {
+    document.getElementById("no").innerText =
+        "Think Again! 🥺";
+}
+</script>
+
+</body>
+</html>
